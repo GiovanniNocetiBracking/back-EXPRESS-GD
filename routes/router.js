@@ -16,8 +16,10 @@ router.get("/suscribe", async (req, res) => {
 	}
 });
 router.post("/suscribe", async (req, res) => {
+	const body = req.body;
 	try {
-		console.log(req.body);
+		await Suscriber.create(body);
+		console.log(res);
 	} catch (error) {
 		console.log(error);
 	}
