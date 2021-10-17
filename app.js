@@ -1,13 +1,12 @@
 const express = require("express");
 const bodyParser = require("body-parser");
+require("dotenv").config();
 const mongoose = require("mongoose");
 const router = require("./routes/router");
 const app = express();
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-
-require("dotenv").config();
 
 const uri = `mongodb+srv://${process.env.USER}:${process.env.PASS}@cluster0.zxn4h.mongodb.net/${process.env.DBNAME}?retryWrites=true&w=majority`;
 
