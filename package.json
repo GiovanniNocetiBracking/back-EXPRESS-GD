@@ -1,10 +1,12 @@
 {
 	"name": "back-express-gd",
 	"version": "1.0.0",
+	"type": "module",
 	"description": "construccion de api para sistema GD utilizando el framework express de node.js",
 	"main": "app.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "nodemon --watch app.js"
 	},
 	"repository": {
 		"type": "git",
