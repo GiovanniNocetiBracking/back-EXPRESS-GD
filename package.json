@@ -1,0 +1,26 @@
+{
+	"name": "back-express-gd",
+	"version": "1.0.0",
+	"description": "construccion de api para sistema GD utilizando el framework express de node.js",
+	"main": "app.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/GiovanniNocetiBracking/back-EXPRESS-GD.git"
+	},
+	"author": "Giovanni Noceti Bracking",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/GiovanniNocetiBracking/back-EXPRESS-GD/issues"
+	},
+	"homepage": "https://github.com/GiovanniNocetiBracking/back-EXPRESS-GD#readme",
+	"dependencies": {
+		"dotenv": "^10.0.0",
+		"express": "^4.17.1"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.13"
+	}
+}
