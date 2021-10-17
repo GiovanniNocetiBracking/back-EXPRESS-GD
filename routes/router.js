@@ -1,10 +1,26 @@
 const express = require("express");
 const nodemailer = require("nodemailer");
+const Suscriber = require("../models/suscriber");
 const router = express.Router();
 
-router.get("/hello", (req, res) => {
+/* router.get("/hello", (req, res) => {
 	res.status(200).send("hello world");
 	console.log("hello world");
+}); */
+router.get("/suscribe", async (req, res) => {
+	try {
+		const suscribers = await Suscriber.find();
+		console.log(suscribers);
+	} catch (error) {
+		console.log(error);
+	}
+});
+router.post("/suscribe", async (req, res) => {
+	try {
+		console.log(req.body);
+	} catch (error) {
+		console.log(error);
+	}
 });
 
 router.post("/contactUs", (req, res) => {
