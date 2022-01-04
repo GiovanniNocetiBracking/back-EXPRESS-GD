@@ -1,0 +1,17 @@
+//App
+PORT=3030
+
+//Mongo
+DBNAME=
+USER=
+PASS=
+
+//Nodemailer
+HOST=smtp.mailtrap.io
+PORT_NM=
+USER_NM=
+PASS_NM=
+
+//Nexmo
+APIKEY=
+APISECRET=
